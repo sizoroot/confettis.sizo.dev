@@ -18,10 +18,11 @@ import * as $$8 from "./islands/confettis/Drop.tsx";
 import * as $$9 from "./islands/confettis/Emojis.tsx";
 import * as $$10 from "./islands/confettis/Fireworks.tsx";
 import * as $$11 from "./islands/confettis/Hearts.tsx";
-import * as $$12 from "./islands/confettis/Random.tsx";
-import * as $$13 from "./islands/confettis/Snow.tsx";
-import * as $$14 from "./islands/confettis/Stars.tsx";
-import * as $$15 from "./islands/confettis/Test.tsx";
+import * as $$12 from "./islands/confettis/Party.tsx";
+import * as $$13 from "./islands/confettis/Random.tsx";
+import * as $$14 from "./islands/confettis/Snow.tsx";
+import * as $$15 from "./islands/confettis/Stars.tsx";
+import * as $$16 from "./islands/confettis/Test.tsx";
 
 const manifest = {
   routes: {
@@ -43,10 +44,11 @@ const manifest = {
     "./islands/confettis/Emojis.tsx": $$9,
     "./islands/confettis/Fireworks.tsx": $$10,
     "./islands/confettis/Hearts.tsx": $$11,
-    "./islands/confettis/Random.tsx": $$12,
-    "./islands/confettis/Snow.tsx": $$13,
-    "./islands/confettis/Stars.tsx": $$14,
-    "./islands/confettis/Test.tsx": $$15,
+    "./islands/confettis/Party.tsx": $$12,
+    "./islands/confettis/Random.tsx": $$13,
+    "./islands/confettis/Snow.tsx": $$14,
+    "./islands/confettis/Stars.tsx": $$15,
+    "./islands/confettis/Test.tsx": $$16,
   },
   baseUrl: import.meta.url,
 };

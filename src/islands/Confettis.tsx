@@ -3,6 +3,7 @@ import DefaultConfettiBlock from "./confettis/Default.tsx"
 import AdvancedConfettiBlock from "./confettis/Advanced.tsx"
 import RandomConfettiBlock from "./confettis/Random.tsx"
 import DropConfettiBlock from "./confettis/Drop.tsx"
+import PartyConfettiBlock from "./confettis/Party.tsx"
 import FireworksConfettiBlock from "./confettis/Fireworks.tsx"
 import SnowConfettiBlock from "./confettis/Snow.tsx"
 import StarsConfettiBlock from "./confettis/Stars.tsx"
@@ -34,6 +35,7 @@ export default function Confettis() {
             <AdvancedConfettiBlock />
             <RandomConfettiBlock />
             <DropConfettiBlock />
+            <PartyConfettiBlock />
             <FireworksConfettiBlock />
             <SnowConfettiBlock />
             <StarsConfettiBlock />
