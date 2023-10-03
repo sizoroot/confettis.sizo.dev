@@ -7,7 +7,7 @@
 
 This is the website of my [confettis](https://github.com/ovniroto/confettis) lib.
 
-View on [cofetti.deno.dev](https://confetti.deno.dev)
+View on [confetti.deno.dev](https://confetti.deno.dev)
 
 ### Resources
 - [Changelog](https://github.com/ovniroto/confettis-web/blob/main/CHANGELOG.md)
