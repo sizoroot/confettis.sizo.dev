@@ -1,4 +1,4 @@
-# 🎉 [Confettis Website](https://cofetti.deno.dev)
+# 🎉 [Confettis Website](https://confetti.deno.dev)
 
 [![GitHub Issues](https://img.shields.io/github/issues/ovniroto/confettis-web)](https://github.com/ovniroto/confettis-web/issues)
 [![GitHub Tag](https://img.shields.io/github/tag/ovniroto/confettis-web.svg)](https://github.com/ovniroto/confettis-web/tags)
@@ -7,7 +7,7 @@
 
 This is the website of my [confettis](https://github.com/ovniroto/confettis) lib.
 
-View on [cofetti.deno.dev](https://cofetti.deno.dev)
+View on [cofetti.deno.dev](https://confetti.deno.dev)
 
 ### Resources
 - [Changelog](https://github.com/ovniroto/confettis-web/blob/main/CHANGELOG.md)
