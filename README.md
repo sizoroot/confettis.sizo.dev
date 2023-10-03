@@ -10,14 +10,14 @@ This is the website of my [confettis](https://github.com/ovniroto/confettis) lib
 View on [cofetti.deno.dev](https://cofetti.deno.dev)
 
 ### Resources
-- [Changelog](https://github.com/ovniroto/confettis/blob/main/CHANGELOG.md)
+- [Changelog](https://github.com/ovniroto/confettis-web/blob/main/CHANGELOG.md)
 
 ### Usage
 Make sure to install [Deno](https://deno.land/manual/getting_started/installation)
 
 Start project:
 ```
-deno task start
+deno task dev
 ```
 
 ## Contributors
