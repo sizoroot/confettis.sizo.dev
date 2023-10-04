@@ -1,12 +1,44 @@
+import * as confetti from "confettis"
 import Logo from '../components/Logo.tsx'
 import Check from '../components/Check.tsx'
 import { Link } from '../components/Buttons.tsx'
-import { copyToClipboard } from '../utils/clipboard.ts'
+import copyToClipboard from '../utils/clipboard.ts'
+import getCursorPosition from '../utils/cursor.ts'
 
 export default function Header() {
 
-    const onClickNPM = (event: Event) => {
+    const onClickNPM = (event: MouseEvent) => {
+        
         copyToClipboard(event)
+
+        const { x, y } = getCursorPosition(event)
+
+        // Confetti
+        confetti.create({
+            count: 50,
+            ticks: 300,
+            gravity: 1.1,
+            decay: 0.91,
+            velocity: 25,
+            x: x,
+            y: y,
+            scales: [ 0.5, 0.6 ],
+            shapes: [ 'square', 'ellipse' ]
+        })
+
+        // Particles
+        confetti.create({
+            count: 25,
+            ticks: -1,
+            gravity: 1.5,
+            decay: 0.91,
+            velocity: 21,
+            x: x,
+            y: y,
+            scales: [ 0.1 ],
+            shapes: ['circle']
+        })
+
     }
 
     return (
@@ -31,7 +63,7 @@ export default function Header() {
                 </Link>
 
                 <button
-                    class="inline-block bg-[#272c2f20] duration-300 text-[#fff] text-[14px] font-normal font-[Inter] mr-2 px-4 pt-[12px] pb-[11px] rounded-[4px] cursor-pointer"
+                    class="inline-block bg-[#272c2f20] hover:bg-[#272c2f35] duration-300 text-[#fff] text-[14px] font-normal font-[Inter] mr-2 px-4 pt-[12px] pb-[11px] rounded-[4px] cursor-pointer"
                     onClick={ onClickNPM }
                     aria-install="npm i confettis"
                 >

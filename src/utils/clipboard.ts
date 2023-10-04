@@ -1,4 +1,4 @@
-export const copyToClipboard = (event: Event) => {
+const copyToClipboard = (event: MouseEvent) => {
 
     const buttonElement = event.target as HTMLButtonElement
     const value = buttonElement.attributes[1].value
@@ -22,3 +22,5 @@ export const copyToClipboard = (event: Event) => {
     }, 5000)
 
 }
+
+export default copyToClipboard
