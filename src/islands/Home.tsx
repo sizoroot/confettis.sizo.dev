@@ -1,8 +1,13 @@
 import Logo from '../components/Logo.tsx'
 import Check from '../components/Check.tsx'
 import { Link } from '../components/Buttons.tsx'
+import { copyToClipboard } from '../utils/clipboard.ts'
 
 export default function Header() {
+
+    const onClickNPM = (event: Event) => {
+        copyToClipboard(event)
+    }
 
     return (
         <div class="relative z-10 lg:mx-auto lg:max-w-[900px] mb-[20px] lg:mb-[50px]">
@@ -24,6 +29,14 @@ export default function Header() {
                 <Link href="https://npmjs.com/package/confettis" alt="NPM">
                     <i class="ti ti-package text-[18px] align-middle mt-[-2px] inline-block"></i> NPM
                 </Link>
+
+                <button
+                    class="inline-block bg-[#272c2f20] duration-300 text-[#fff] text-[14px] font-normal font-[Inter] mr-2 px-4 pt-[12px] pb-[11px] rounded-[4px] cursor-pointer"
+                    onClick={ onClickNPM }
+                    aria-install="npm i confettis"
+                >
+                    npm i confettis <i class="ti ti-clipboard text-[18px] align-middle mt-[-2px] inline-block ml-1"></i>
+                </button>
 
             </div>
 
