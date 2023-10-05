@@ -1,5 +1,6 @@
-const unpkg = await fetch("https://unpkg.com/confettis/package.json")
-const version = unpkg.url.replace("https://unpkg.com/confettis@","").replace("/package.json","")
+import version from '../utils/version.ts'
+
+const v = await version()
 
 export default function Header() {
 
@@ -13,13 +14,13 @@ export default function Header() {
                 </div>
                 <div class="relative pt-[50px] lg:pt-0">
                     <div class="hidden absolute lg:block lg:left-[150px] lg:top-[70px] text-[18px] font-[Inter] px-3 py-1 bg-[#00000010] rounded-2xl">
-                        v{ version }
+                        v{ v }
                     </div>
                     <h1 class="logo text-center text-[80px] md:text-[130px] lg:text-[180px] text-white font-bold cursor-default select-none">
                         Confettis
                     </h1>
                     <div class="block text-center lg:hidden font-[Inter] text-[#ffffff80]">
-                        Latest Version <span class="text-[#ffffff]">v{version}</span>
+                        Latest Version <span class="text-[#ffffff]">v{ v }</span>
                     </div>
                 </div>
             </div>

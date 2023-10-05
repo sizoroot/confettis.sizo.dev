@@ -11,44 +11,57 @@ const maxConfettiScale = 1
 const minConfettiSpeed = 20
 const maxConfettiSpeed = 30
 
+const minConfettiGravity = 0.6
+const maxConfettiGravity = 1.1
+
 const colors = [ '#307BFF', '#FFFFFF' ]
 
 const createParty = () => {
 
+    // Left Confetti
     confetti.create({
-        count: 3,
-        spread: 50,
-        ticks: 200,
-        gravity: 1,
-        decay: 0.95,
-        angle: 50,
-        velocity: randomNumber(minConfettiSpeed, maxConfettiSpeed),
         x: 0.001,
         y: 0.5,
-        scales: [
+        count: 3,
+        gravity: [
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+        ],
+        ticks: 200,
+        scale: [
             randomNumber(minConfettiScale, maxConfettiScale),
             randomNumber(minConfettiScale, maxConfettiScale),
             randomNumber(minConfettiScale, maxConfettiScale)
         ],
+        speed: randomNumber(minConfettiSpeed, maxConfettiSpeed),
+        decay: 0.95,
+        spread: 50,
+        angle: 50,
         shapes: [ 'square', 'ellipse' ],
         colors: colors
     })
 
+    // Right Confetti
     confetti.create({
-        count: 3,
-        spread: 50,
-        ticks: 200,
-        gravity: 1,
-        decay: 0.95,
-        angle: 130,
-        velocity: randomNumber(minConfettiSpeed, maxConfettiSpeed),
         x: 1.999,
         y: 0.5,
-        scales: [
+        count: 3,
+        gravity: [
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+            randomNumber(minConfettiGravity, maxConfettiGravity),
+        ],
+        ticks: 200,
+        scale: [
             randomNumber(minConfettiScale, maxConfettiScale),
             randomNumber(minConfettiScale, maxConfettiScale),
             randomNumber(minConfettiScale, maxConfettiScale)
         ],
+        speed: randomNumber(minConfettiSpeed, maxConfettiSpeed),
+        decay: 0.95,
+        spread: 50,
+        angle: 130,
         shapes: [ 'square', 'ellipse' ],
         colors: colors
     })
@@ -90,44 +103,57 @@ const createConfetti = () => {
     const minConfettiSpeed = 20
     const maxConfettiSpeed = 30
 
+    const minConfettiGravity = 0.6
+    const maxConfettiGravity = 1.1
+
     const colors = [ '#307BFF', '#FFFFFF' ]
 
     const createParty = () => {
 
+        // Left Confetti
         confetti.create({
-            count: 3,
-            spread: 50,
-            ticks: 200,
-            gravity: 1,
-            decay: 0.95,
-            angle: 50,
-            velocity: randomNumber(minConfettiSpeed, maxConfettiSpeed),
             x: 0.001,
             y: 0.5,
-            scales: [
+            count: 3,
+            gravity: [
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+            ],
+            ticks: 200,
+            scale: [
                 randomNumber(minConfettiScale, maxConfettiScale),
                 randomNumber(minConfettiScale, maxConfettiScale),
                 randomNumber(minConfettiScale, maxConfettiScale)
             ],
+            speed: randomNumber(minConfettiSpeed, maxConfettiSpeed),
+            decay: 0.95,
+            spread: 50,
+            angle: 50,
             shapes: [ 'square', 'ellipse' ],
             colors: colors
         })
 
+        // Right Confetti
         confetti.create({
-            count: 3,
-            spread: 50,
-            ticks: 200,
-            gravity: 1,
-            decay: 0.95,
-            angle: 130,
-            velocity: randomNumber(minConfettiSpeed, maxConfettiSpeed),
             x: 1.999,
             y: 0.5,
-            scales: [
+            count: 3,
+            gravity: [
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+                randomNumber(minConfettiGravity, maxConfettiGravity),
+            ],
+            ticks: 200,
+            scale: [
                 randomNumber(minConfettiScale, maxConfettiScale),
                 randomNumber(minConfettiScale, maxConfettiScale),
                 randomNumber(minConfettiScale, maxConfettiScale)
             ],
+            speed: randomNumber(minConfettiSpeed, maxConfettiSpeed),
+            decay: 0.95,
+            spread: 50,
+            angle: 130,
             shapes: [ 'square', 'ellipse' ],
             colors: colors
         })

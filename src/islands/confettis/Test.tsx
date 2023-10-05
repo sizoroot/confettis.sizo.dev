@@ -18,29 +18,30 @@ const createConfetti = () => {
     const x = 0.5
     const y = 0.7
 
+    // Confetti
     confetti.create({
-        count: 42,
-        ticks: -1,
-        gravity: 1.5,
-        decay: 0.93,
-        velocity: 42,
         x: x,
         y: y,
-        scales: [ 0.1 ],
-        shapes: ['circle']
+        count: 100,
+        gravity: [ 0.6, 0.9 ],
+        ticks: -1,
+        scale: [ 0.7, 0.8 ],
+        speed: 32,
+        decay: 0.93,
+        shapes: [ 'square', 'ellipse' ]
     })
 
+    // Particles
     confetti.create({
-        count: 100,
-        ticks: -1,
-        gravity: 1,
-        decay: 0.93,
-        velocity: 32,
         x: x,
         y: y,
-        static: false,
-        scales: [ 0.7, 0.8 ],
-        shapes: [ 'square', 'ellipse' ]
+        count: 42,
+        gravity: [ 0.8, 1.3 ],
+        ticks: -1,
+        scale: 0.1,
+        speed: 42,
+        decay: 0.93,
+        shapes: ['circle']
     })
 
 }

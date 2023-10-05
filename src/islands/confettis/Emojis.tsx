@@ -31,34 +31,34 @@ const createEmoji = () => {
 
     // Emojis
     confetti.create({
-        count: randomNumber(minEmojiCount, maxEmojiCount),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: 1.5,
-        decay: 0.96,
-        velocity: 31,
         x: xPos,
         y: yPos,
-        scales: [ 
+        count: randomNumber(minEmojiCount, maxEmojiCount),
+        gravity: 1.5,
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: [ 
             randomNumber(minEmojiSize, maxEmojiSize),
             randomNumber(minEmojiSize, maxEmojiSize),
             randomNumber(minEmojiSize, maxEmojiSize)
         ],
+        speed: 31,
+        decay: 0.96,
+        spread: 360,
         shapes: [ 'emoji' ],
         emojis: emojis
     })
 
     // Particles
     confetti.create({
-        count: randomNumber(20, 60),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: 1.7,
-        decay: 0.93,
-        velocity: 20,
         x: xPos,
         y: yPos,
-        scales: [ 0.1 ],
+        count: randomNumber(20, 60),
+        gravity: 1.7,
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: 0.1,
+        speed: 20,
+        decay: 0.93,
+        spread: 360,
         shapes: [ 'circle' ],
         colors: [ '#ffffff', '#000000', '#FF752B' ]
     })
@@ -122,34 +122,34 @@ const createConfetti = () => {
 
         // Emojis
         confetti.create({
-            count: randomNumber(minEmojiCount, maxEmojiCount),
-            ticks: randomNumber(minDisappear, maxDisappear),
-            spread: 360,
-            gravity: 1.5,
-            decay: 0.96,
-            velocity: 31,
             x: xPos,
             y: yPos,
-            scales: [ 
+            count: randomNumber(minEmojiCount, maxEmojiCount),
+            gravity: 1.5,
+            ticks: randomNumber(minDisappear, maxDisappear),
+            scale: [ 
                 randomNumber(minEmojiSize, maxEmojiSize),
                 randomNumber(minEmojiSize, maxEmojiSize),
                 randomNumber(minEmojiSize, maxEmojiSize)
             ],
+            speed: 31,
+            decay: 0.96,
+            spread: 360,
             shapes: [ 'emoji' ],
             emojis: emojis
         })
 
         // Particles
         confetti.create({
-            count: randomNumber(20, 60),
-            ticks: randomNumber(minDisappear, maxDisappear),
-            spread: 360,
-            gravity: 1.7,
-            decay: 0.93,
-            velocity: 20,
             x: xPos,
             y: yPos,
-            scales: [ 0.1 ],
+            count: randomNumber(20, 60),
+            gravity: 1.7,
+            ticks: randomNumber(minDisappear, maxDisappear),
+            scale: 0.1,
+            speed: 20,
+            decay: 0.93,
+            spread: 360,
             shapes: [ 'circle' ],
             colors: [ '#ffffff', '#000000', '#FF752B' ]
         })

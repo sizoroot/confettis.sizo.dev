@@ -16,34 +16,34 @@ const starColors = [ '#FFFC9A', '#FFD655', '#FFC155', '#FF9D55' ]
 
 // Stars
 confetti.create({
-    count: randomNumber(minStarCount, maxStarCount),
-    ticks: randomNumber(minDisappear, maxDisappear),
-    spread: 360,
-    gravity: -0.001,
-    decay: 0.94,
-    velocity: 30,
     x: 0.5,
     y: 0.5,
-    scales: [
+    count: randomNumber(minStarCount, maxStarCount),
+    gravity: -0.001,
+    ticks: randomNumber(minDisappear, maxDisappear),
+    scale: [
         randomNumber(minStarSize, maxStarSize),
         randomNumber(minStarSize, maxStarSize),
         randomNumber(minStarSize, maxStarSize)
     ],
+    speed: 30,
+    decay: 0.94,
+    spread: 360,
     shapes: [ 'star' ],
     colors: starColors
 })
 
 // Particles
 confetti.create({
-    count: randomNumber(minStarCount, maxStarCount),
-    ticks: randomNumber(minDisappear, maxDisappear),
-    spread: 360,
-    gravity: -0.001,
-    decay: 0.93,
-    velocity: 20,
     x: 0.5,
     y: 0.5,
-    scales: [ 0.1 ],
+    count: randomNumber(minStarCount, maxStarCount),
+    gravity: -0.001,
+    ticks: randomNumber(minDisappear, maxDisappear),
+    scale: 0.1,
+    speed: 20,
+    decay: 0.93,
+    spread: 360,
     shapes: [ 'circle' ],
     colors: starColors
 })
@@ -83,34 +83,34 @@ const createConfetti = () => {
 
     // Stars
     confetti.create({
-        count: randomNumber(minStarCount, maxStarCount),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: -0.001,
-        decay: 0.94,
-        velocity: 30,
         x: 0.5,
         y: 0.5,
-        scales: [
+        count: randomNumber(minStarCount, maxStarCount),
+        gravity: -0.001,
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: [
             randomNumber(minStarSize, maxStarSize),
             randomNumber(minStarSize, maxStarSize),
             randomNumber(minStarSize, maxStarSize)
         ],
+        speed: 30,
+        decay: 0.94,
+        spread: 360,
         shapes: [ 'star' ],
         colors: starColors
     })
 
     // Particles
     confetti.create({
-        count: randomNumber(minStarCount, maxStarCount),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: -0.001,
-        decay: 0.93,
-        velocity: 20,
         x: 0.5,
         y: 0.5,
-        scales: [ 0.1 ],
+        count: randomNumber(minStarCount, maxStarCount),
+        gravity: -0.001,
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: 0.1,
+        speed: 20,
+        decay: 0.93,
+        spread: 360,
         shapes: [ 'circle' ],
         colors: starColors
     })

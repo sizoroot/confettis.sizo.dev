@@ -11,24 +11,36 @@ const maxHeartScale = 0.5
 const minHeartSpeed = 5
 const maxHeartSpeed = 10
 
+const minHeartGravity = -0.5
+const maxHeartGravity = -1.5
+
 const createHeart = () => {
+
+    // Hearts
     confetti.create({
-        count: 3,
-        spread: 50,
-        ticks: randomNumber(30, 50),
-        gravity: -1,
-        decay: 0.9,
-        velocity: randomNumber(minHeartSpeed, maxHeartSpeed),
         x: 0.5,
         y: 0.5,
-        scales: [
+        count: 3,
+        gravity: [
+            randomNumber(minHeartGravity, maxHeartGravity),
+            randomNumber(minHeartGravity, maxHeartGravity),
+            randomNumber(minHeartGravity, maxHeartGravity),
+            randomNumber(minHeartGravity, maxHeartGravity),
+        ],
+        ticks: randomNumber(50, 100),
+        scale: [
+            randomNumber(minHeartScale, maxHeartScale),
             randomNumber(minHeartScale, maxHeartScale),
             randomNumber(minHeartScale, maxHeartScale),
             randomNumber(minHeartScale, maxHeartScale)
         ],
+        speed: randomNumber(minHeartSpeed, maxHeartSpeed),
+        decay: 0.92,
+        spread: 80,
         shapes: [ 'emoji' ],
         emojis: [ '❤️' ]
     })
+
 }
 
 setInterval(() => {
@@ -66,30 +78,42 @@ const createConfetti = () => {
     const minHeartSpeed = 5
     const maxHeartSpeed = 10
 
+    const minHeartGravity = -0.5
+    const maxHeartGravity = -1.5
+
     const createHeart = () => {
+
+        // Hearts
         confetti.create({
-            count: 3,
-            spread: 50,
-            ticks: randomNumber(30, 50),
-            gravity: -1,
-            decay: 0.9,
-            velocity: randomNumber(minHeartSpeed, maxHeartSpeed),
             x: 0.5,
             y: 0.5,
-            scales: [
+            count: 3,
+            gravity: [
+                randomNumber(minHeartGravity, maxHeartGravity),
+                randomNumber(minHeartGravity, maxHeartGravity),
+                randomNumber(minHeartGravity, maxHeartGravity),
+                randomNumber(minHeartGravity, maxHeartGravity),
+            ],
+            ticks: randomNumber(50, 100),
+            scale: [
+                randomNumber(minHeartScale, maxHeartScale),
                 randomNumber(minHeartScale, maxHeartScale),
                 randomNumber(minHeartScale, maxHeartScale),
                 randomNumber(minHeartScale, maxHeartScale)
             ],
+            speed: randomNumber(minHeartSpeed, maxHeartSpeed),
+            decay: 0.92,
+            spread: 80,
             shapes: [ 'emoji' ],
             emojis: [ '❤️' ]
         })
+
     }
 
     const heartsInterval = setInterval(() => {
         if(!heartsActive) clearInterval(heartsInterval)
         createHeart()
-    }, 180)
+    }, 150)
     
     function randomNumber(min: number, max: number) {
         return Math.random() * (max - min) + min

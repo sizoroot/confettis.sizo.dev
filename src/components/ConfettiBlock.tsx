@@ -1,4 +1,3 @@
-import { JSX } from "preact"
 import type { ComponentChildren } from "preact"
 import { Confetti } from "./Buttons.tsx"
 import Code from './Code.tsx'
