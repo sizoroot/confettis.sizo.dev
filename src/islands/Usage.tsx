@@ -3,7 +3,8 @@ import version from '../utils/version.ts'
 
 const v = await version()
 
-const browserUrl = `https://cdn.jsdelivr.net/npm/confettis@${v}/lib/confettis.min.js`
+const unpkgUrl = `https://unpkg.com/confettis@${v}/lib/confettis.min.js`
+const localUrl = `[path-to-confettis]/lib/confettis.min.js`
 
 export default function Usage() {
 
@@ -21,27 +22,36 @@ export default function Usage() {
                             </h2>
 
                             <div class="my-10">
-                                <h2 class="text-[18px] font-[Inter] font-normal mb-[-15px]">NodeJS</h2>
-                                <Code class="language-shell">
-                                    npm install confettis --save
-                                </Code>
-                                <Code class="language-javascript">
-                                import * as confetti from 'confettis'
-                                </Code>
-                            </div>
-
-                            <div class="my-10">
-                                <h2 class="text-[18px] font-[Inter] font-normal mb-[-15px]">Deno</h2>
+                                <h2 class="text-[18px] font-[Inter] font-bold mb-[-15px]">Deno</h2>
                                 <Code class="language-javascript">
                                     import * as confetti from 'https://esm.sh/confettis@{ v }'
                                 </Code>
                             </div>
 
                             <div class="my-10">
-                                <h2 class="text-[18px] font-[Inter] font-normal mb-[-15px]">Browser</h2>
-                                <Code class="html">
-                                    { `<script src="` + browserUrl + `"></script>` }
+                                <h2 class="text-[18px] font-[Inter] font-bold mb-[-15px]">Node.js</h2>
+                                <Code class="language-shell">
+                                    npm install confettis --save
                                 </Code>
+                                <Code class="language-javascript">
+                                    import * as confetti from 'confettis'
+                                </Code>
+                            </div>
+
+                            <div class="my-10">
+
+                                <h2 class="text-[18px] font-[Inter] font-bold">Browser</h2>
+
+                                <h2 class="text-[14px] font-[Inter] font-normal mb-[-15px] mt-[15px]">CDN</h2>
+                                <Code class="html">
+                                    { `<script src="` + unpkgUrl + `"></script>` }
+                                </Code>
+
+                                <h2 class="text-[14px] font-[Inter] font-normal mb-[-15px] mt-[20px]">Local</h2>
+                                <Code class="html">
+                                    { `<script src="` + localUrl + `"></script>` }
+                                </Code>
+
                             </div>
                             
                         </div>
