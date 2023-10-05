@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.6.2
+
+Release 5 oct 2023
+
+  * Added author island with some info
+  * Modified footer with deno fresh link
+
 ### 0.6.0
 
 Release 5 oct 2023
