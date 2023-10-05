@@ -16,15 +16,15 @@ const maxSnowSpeed = 0.8
 
 const createSnow = () => {
     confetti.create({
-        count: 1,
-        spread: 0,
-        ticks: randomNumber(-1, 1000),
-        gravity: randomNumber(minSnowGravity, maxSnowGravity),
-        decay: 0.90,
-        velocity: randomNumber(minSnowSpeed, maxSnowSpeed),
         x: randomNumber(0, 1),
         y: 0.0001,
-        scales: [ randomNumber(minSnowScale, maxSnowScale) ],
+        count: 1,
+        gravity: randomNumber(minSnowGravity, maxSnowGravity),
+        ticks: randomNumber(-1, 1000),
+        scale: randomNumber(minSnowScale, maxSnowScale),
+        speed: randomNumber(minSnowSpeed, maxSnowSpeed),
+        decay: 0.90,
+        spread: 0,
         shapes: [ 'circle' ],
         colors: [ '#ffffff' ]
     })
@@ -70,15 +70,15 @@ const createConfetti = () => {
 
     const createSnow = () => {
         confetti.create({
-            count: 1,
-            spread: 0,
-            ticks: randomNumber(-1, 1000),
-            gravity: randomNumber(minSnowGravity, maxSnowGravity),
-            decay: 0.90,
-            velocity: randomNumber(minSnowSpeed, maxSnowSpeed),
             x: randomNumber(0, 1),
             y: 0.0001,
-            scales: [ randomNumber(minSnowScale, maxSnowScale) ],
+            count: 1,
+            gravity: randomNumber(minSnowGravity, maxSnowGravity),
+            ticks: randomNumber(-1, 1000),
+            scale: randomNumber(minSnowScale, maxSnowScale),
+            speed: randomNumber(minSnowSpeed, maxSnowSpeed),
+            decay: 0.90,
+            spread: 0,
             shapes: [ 'circle' ],
             colors: [ '#ffffff' ]
         })

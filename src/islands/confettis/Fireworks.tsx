@@ -6,13 +6,16 @@ let fireworksActive = false
 export default function FireworksConfettiBlock() {
 
     const code = `const minFireworkCount = 30
-const maxFireworkCount = 100
+const maxFireworkCount = 120
 
 const minFireworkSize = 0.1
 const maxFireworkSize = 0.4
 
 const minDisappear = 60
 const maxDisappear = 180
+
+const minFireworkGravity = 0.4
+const maxFireworkGravity = 0.7
 
 const minPos = 0.1
 const maxPos = 0.9
@@ -34,36 +37,46 @@ const createFirework = () => {
     const colorStack = parseInt(randomNumber(0, fireworkColors.length - 1).toFixed(0))
     const colors = fireworkColors[colorStack]
 
-    // Firework
+    // Fireworks
     confetti.create({
-        count: randomNumber(minFireworkCount, maxFireworkCount),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: 0.6,
-        decay: 0.95,
-        velocity: 26,
         x: xPos,
         y: yPos,
-        scales: [
+        count: randomNumber(minFireworkCount, maxFireworkCount),
+        gravity: [
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+        ],
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: [
             randomNumber(minFireworkSize, maxFireworkSize),
             randomNumber(minFireworkSize, maxFireworkSize),
             randomNumber(minFireworkSize, maxFireworkSize)
         ],
+        speed: 26,
+        decay: 0.95,
+        spread: 360,
         shapes: [ 'circle' ],
         colors: colors
     })
 
     // Particles
     confetti.create({
-        count: randomNumber(minFireworkCount, maxFireworkCount),
-        ticks: randomNumber(minDisappear, maxDisappear),
-        spread: 360,
-        gravity: 1.1,
-        decay: 0.93,
-        velocity: 20,
         x: xPos,
         y: yPos,
-        scales: [ 0.1 ],
+        count: randomNumber(minFireworkCount, maxFireworkCount),
+        gravity: [
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+            randomNumber(minFireworkGravity, maxFireworkGravity),
+        ],
+        ticks: randomNumber(minDisappear, maxDisappear),
+        scale: 0.1,
+        speed: 20,
+        decay: 0.93,
+        spread: 360,
         shapes: [ 'circle' ],
         colors: colors
     })
@@ -100,10 +113,13 @@ const createConfetti = () => {
     fireworksActive = !fireworksActive
 
     const minFireworkCount = 30
-    const maxFireworkCount = 100
+    const maxFireworkCount = 120
 
     const minFireworkSize = 0.1
     const maxFireworkSize = 0.4
+
+    const minFireworkGravity = 0.4
+    const maxFireworkGravity = 0.7
 
     const minDisappear = 60
     const maxDisappear = 180
@@ -135,36 +151,46 @@ const createConfetti = () => {
         const colorStack = parseInt(randomNumber(0, fireworkColors.length - 1).toFixed(0))
         const colors = fireworkColors[colorStack]
 
-        // Firework
+        // Fireworks
         confetti.create({
-            count: randomNumber(minFireworkCount, maxFireworkCount),
-            ticks: randomNumber(minDisappear, maxDisappear),
-            spread: 360,
-            gravity: 0.6,
-            decay: 0.95,
-            velocity: 26,
             x: xPos,
             y: yPos,
-            scales: [
+            count: randomNumber(minFireworkCount, maxFireworkCount),
+            gravity: [
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+            ],
+            ticks: randomNumber(minDisappear, maxDisappear),
+            scale: [
                 randomNumber(minFireworkSize, maxFireworkSize),
                 randomNumber(minFireworkSize, maxFireworkSize),
                 randomNumber(minFireworkSize, maxFireworkSize)
             ],
+            speed: 26,
+            decay: 0.95,
+            spread: 360,
             shapes: [ 'circle' ],
             colors: colors
         })
 
         // Particles
         confetti.create({
-            count: randomNumber(minFireworkCount, maxFireworkCount),
-            ticks: randomNumber(minDisappear, maxDisappear),
-            spread: 360,
-            gravity: 1.1,
-            decay: 0.93,
-            velocity: 20,
             x: xPos,
             y: yPos,
-            scales: [ 0.1 ],
+            count: randomNumber(minFireworkCount, maxFireworkCount),
+            gravity: [
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+                randomNumber(minFireworkGravity, maxFireworkGravity),
+            ],
+            ticks: randomNumber(minDisappear, maxDisappear),
+            scale: 0.1,
+            speed: 20,
+            decay: 0.93,
+            spread: 360,
             shapes: [ 'circle' ],
             colors: colors
         })

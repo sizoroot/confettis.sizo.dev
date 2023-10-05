@@ -1,3 +1,14 @@
+# Changelog
+
+### 0.6.0
+
+Release 5 oct 2023
+
+  * Updated to confettis [`v.0.3.0`](https://github.com/ovniroto/confettis/releases/tag/v0.3.0)
+  * Added usage instructions
+  * Refactor some example codes
+  * Fixed some parameters of previous versions
+
 ### 0.5.1
 
 Release 4 oct 2023

@@ -16,15 +16,15 @@ const maxDropSpeed = 0.8
 
 const createDrop = () => {
     confetti.create({
-        count: 1,
-        spread: 0,
-        ticks: randomNumber(-1, 1000),
-        gravity: randomNumber(minDropGravity, maxDropGravity),
-        decay: 0.90,
-        velocity: randomNumber(minDropSpeed, maxDropSpeed),
         x: randomNumber(0, 1),
         y: 0.0001,
-        scales: [ randomNumber(minDropScale, maxDropScale) ],
+        count: 1,
+        gravity: randomNumber(minDropGravity, maxDropGravity),
+        ticks: randomNumber(-1, 1000),
+        scale: randomNumber(minDropScale, maxDropScale),
+        speed: randomNumber(minDropSpeed, maxDropSpeed),
+        decay: 0.90,
+        spread: 0,
         shapes: [ 'square', 'ellipse' ]
     })
 }
@@ -41,7 +41,7 @@ function randomNumber(min, max) {
         <>
             <ConfettiBlock
                 title="Drop"
-                description="You can create drop confetti effect in a very simple way."
+                description="You can create drop style confetti effect in a very simple way."
                 toggle={ true }
                 callback={ createConfetti }
             >
@@ -69,15 +69,15 @@ const createConfetti = () => {
 
     const createDrop = () => {
         confetti.create({
-            count: 1,
-            spread: 0,
-            ticks: randomNumber(-1, 1000),
-            gravity: randomNumber(minDropGravity, maxDropGravity),
-            decay: 0.90,
-            velocity: randomNumber(minDropSpeed, maxDropSpeed),
             x: randomNumber(0, 1),
             y: 0.0001,
-            scales: [ randomNumber(minDropScale, maxDropScale) ],
+            count: 1,
+            gravity: randomNumber(minDropGravity, maxDropGravity),
+            ticks: randomNumber(-1, 1000),
+            scale: randomNumber(minDropScale, maxDropScale),
+            speed: randomNumber(minDropSpeed, maxDropSpeed),
+            decay: 0.90,
+            spread: 0,
             shapes: [ 'square', 'ellipse' ]
         })
     }
