@@ -1,5 +1,13 @@
 # Changelog
 
+### 0.6.3
+
+Release 5 oct 2023
+
+  * Added unkpg cdn to browser
+  * Added local usage to browser
+  * Other minor changes
+
 ### 0.6.2
 
 Release 5 oct 2023
