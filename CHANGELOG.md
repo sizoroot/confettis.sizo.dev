@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.6.5
+
+Release 6 oct 2023
+
+  * Added new confetti example (cookies)
+
 ### 0.6.3
 
 Release 5 oct 2023
