@@ -15,16 +15,17 @@ import * as $$5 from "./islands/Header.tsx";
 import * as $$6 from "./islands/Home.tsx";
 import * as $$7 from "./islands/Usage.tsx";
 import * as $$8 from "./islands/confettis/Advanced.tsx";
-import * as $$9 from "./islands/confettis/Default.tsx";
-import * as $$10 from "./islands/confettis/Drop.tsx";
-import * as $$11 from "./islands/confettis/Emojis.tsx";
-import * as $$12 from "./islands/confettis/Fireworks.tsx";
-import * as $$13 from "./islands/confettis/Hearts.tsx";
-import * as $$14 from "./islands/confettis/Party.tsx";
-import * as $$15 from "./islands/confettis/Random.tsx";
-import * as $$16 from "./islands/confettis/Snow.tsx";
-import * as $$17 from "./islands/confettis/Stars.tsx";
-import * as $$18 from "./islands/confettis/Test.tsx";
+import * as $$9 from "./islands/confettis/Cookies.tsx";
+import * as $$10 from "./islands/confettis/Default.tsx";
+import * as $$11 from "./islands/confettis/Drop.tsx";
+import * as $$12 from "./islands/confettis/Emojis.tsx";
+import * as $$13 from "./islands/confettis/Fireworks.tsx";
+import * as $$14 from "./islands/confettis/Hearts.tsx";
+import * as $$15 from "./islands/confettis/Party.tsx";
+import * as $$16 from "./islands/confettis/Random.tsx";
+import * as $$17 from "./islands/confettis/Snow.tsx";
+import * as $$18 from "./islands/confettis/Stars.tsx";
+import * as $$19 from "./islands/confettis/Test.tsx";
 
 const manifest = {
   routes: {
@@ -43,16 +44,17 @@ const manifest = {
     "./islands/Home.tsx": $$6,
     "./islands/Usage.tsx": $$7,
     "./islands/confettis/Advanced.tsx": $$8,
-    "./islands/confettis/Default.tsx": $$9,
-    "./islands/confettis/Drop.tsx": $$10,
-    "./islands/confettis/Emojis.tsx": $$11,
-    "./islands/confettis/Fireworks.tsx": $$12,
-    "./islands/confettis/Hearts.tsx": $$13,
-    "./islands/confettis/Party.tsx": $$14,
-    "./islands/confettis/Random.tsx": $$15,
-    "./islands/confettis/Snow.tsx": $$16,
-    "./islands/confettis/Stars.tsx": $$17,
-    "./islands/confettis/Test.tsx": $$18,
+    "./islands/confettis/Cookies.tsx": $$9,
+    "./islands/confettis/Default.tsx": $$10,
+    "./islands/confettis/Drop.tsx": $$11,
+    "./islands/confettis/Emojis.tsx": $$12,
+    "./islands/confettis/Fireworks.tsx": $$13,
+    "./islands/confettis/Hearts.tsx": $$14,
+    "./islands/confettis/Party.tsx": $$15,
+    "./islands/confettis/Random.tsx": $$16,
+    "./islands/confettis/Snow.tsx": $$17,
+    "./islands/confettis/Stars.tsx": $$18,
+    "./islands/confettis/Test.tsx": $$19,
   },
   baseUrl: import.meta.url,
 };

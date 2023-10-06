@@ -8,6 +8,7 @@ import SnowConfettiBlock from "./confettis/Snow.tsx"
 import StarsConfettiBlock from "./confettis/Stars.tsx"
 import EmojisConfettiBlock from "./confettis/Emojis.tsx"
 import HeartsConfettiBlock from "./confettis/Hearts.tsx"
+import CookiesConfettiBlock from "./confettis/Cookies.tsx"
 
 export default function Confettis() {
     return (
@@ -29,6 +30,7 @@ export default function Confettis() {
             <StarsConfettiBlock />
             <EmojisConfettiBlock />
             <HeartsConfettiBlock />
+            <CookiesConfettiBlock />
 
         </div>
     )
