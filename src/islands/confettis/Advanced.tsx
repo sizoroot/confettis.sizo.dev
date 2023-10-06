@@ -6,18 +6,7 @@ export default function AdvancedConfettiBlock() {
     const code = `const x = 0.5
 const y = 0.7
 
-confetti.create({
-    x: x,
-    y: y,
-    count: 42,
-    gravity: 1.5,
-    ticks: -1,
-    scale: 0.1,
-    speed: 42,
-    decay: 0.93,
-    shapes: [ 'circle' ]
-})
-
+// Confetti
 confetti.create({
     x: x,
     y: y,
@@ -28,6 +17,19 @@ confetti.create({
     speed: 32,
     decay: 0.93,
     shapes: [ 'square', 'ellipse' ]
+})
+
+// Particles
+confetti.create({
+    x: x,
+    y: y,
+    count: 42,
+    gravity: 1.5,
+    ticks: -1,
+    scale: 0.1,
+    speed: 42,
+    decay: 0.93,
+    shapes: [ 'circle' ]
 })`
 
     return (
@@ -51,18 +53,7 @@ const createConfetti = () => {
     const x = 0.5
     const y = 0.7
     
-    confetti.create({
-        x: x,
-        y: y,
-        count: 42,
-        gravity: 1.5,
-        ticks: -1,
-        scale: 0.1,
-        speed: 42,
-        decay: 0.93,
-        shapes: [ 'circle' ]
-    })
-    
+    // Confetti
     confetti.create({
         x: x,
         y: y,
@@ -73,6 +64,19 @@ const createConfetti = () => {
         speed: 32,
         decay: 0.93,
         shapes: [ 'square', 'ellipse' ]
+    })
+
+    // Particles
+    confetti.create({
+        x: x,
+        y: y,
+        count: 42,
+        gravity: 1.5,
+        ticks: -1,
+        scale: 0.1,
+        speed: 42,
+        decay: 0.93,
+        shapes: [ 'circle' ]
     })
 
 }
