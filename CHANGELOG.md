@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.6.6
+
+Release 18 oct 2023
+
+  * Added Bluesky social link
+  * Updated Deno Fresh to version `1.5.2`
+
 ### 0.6.5
 
 Release 6 oct 2023
