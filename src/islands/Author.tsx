@@ -5,7 +5,7 @@ export default function Creator() {
                 <div class="md:flex justify-center h-full relative z-10">
 
                     <div class="lg:w-[400px] py-[50px]">
-                        <img alt="Lucas O. S." loading="lazy"class="mx-auto w-full max-w-[250px] md:w-[250px] mask mask-squircle mt-[50px]" src="/avatar.jpg" />
+                        <img alt="Lucas O. S." loading="lazy"class="mx-auto w-full max-w-[250px] md:w-[250px] mask mask-squircle mt-[50px]" src="/images/avatar.jpg" />
 
                         <div class="text-center mt-[20px]">
                             <a href="https://x.com/ovniroto" target="_blank" alt="X" class="inline-block mr-3">
@@ -28,7 +28,7 @@ export default function Creator() {
                                 Hello, I'm Lucas O. S. and this is a small library to create confettis on your website. I was inspired by the existing library called <a class="text-[#fff] underline" href="https://github.com/catdad/canvas-confetti">canvas-confetti</a>, but I wanted to create something new with more understandable code and more functionality.
                             </p>
                             <p class="mb-5">
-                            The idea of this library is that web developers can add any style of confetti and other effects to their website. You can see the source code in the <a class="text-[#fff] underline" href="https://github.com/ovniroto/confettis">confettis</a> repository on github.
+                                The idea of this library is that web developers can add any style of confetti and other effects to their website. You can see the source code in the <a class="text-[#fff] underline" href="https://github.com/ovniroto/confettis">confettis</a> repository on github.
                             </p>
                             <p>
                                 You can follow me on my social networks to see my future projects.
