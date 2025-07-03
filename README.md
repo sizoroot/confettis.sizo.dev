@@ -1,24 +1,16 @@
-# 🎉 [Confettis Website](https://confettis.ovni.dev)
+# 🎉 [Confettis Website](https://confettis.sizo.dev)
 
-[![GitHub Issues](https://img.shields.io/github/issues/ovniroto/confettis-web)](https://github.com/ovniroto/confettis-web/issues)
-[![GitHub Tag](https://img.shields.io/github/tag/ovniroto/confettis-web.svg)](https://github.com/ovniroto/confettis-web/tags)
-[![GitHub Commits](https://img.shields.io/github/commit-activity/t/ovniroto/confettis-web)](https://github.com/ovniroto/confettis-web/commits/main/)
-[![GitHub License](https://img.shields.io/github/license/ovniroto/confettis-web)](https://github.com/ovniroto/confettis-web/blob/main/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/sizoroot/confettis.sizo.dev)](https://github.com/sizoroot/confettis.sizo.dev/issues)
+[![GitHub Tag](https://img.shields.io/github/tag/sizoroot/confettis.sizo.dev.svg)](https://github.com/sizoroot/confettis.sizo.dev/tags)
+[![GitHub Commits](https://img.shields.io/github/commit-activity/t/sizoroot/confettis.sizo.dev)](https://github.com/sizoroot/confettis.sizo.dev/commits/main/)
+[![GitHub License](https://img.shields.io/github/license/sizoroot/confettis.sizo.dev)](https://github.com/sizoroot/confettis.sizo.dev/blob/main/LICENSE)
 
-This is the website of my [confettis](https://github.com/ovniroto/confettis) lib.
+This is the website of my [confettis](https://github.com/sizoroot/confettis) lib.
 
-View on [confettis.ovni.dev](https://confettis.ovni.dev)
+View on [confettis.sizo.dev](https://confettis.sizo.dev)
 
 ### Resources
-- [Changelog](https://github.com/ovniroto/confettis-web/blob/main/CHANGELOG.md)
-
-### Usage
-Make sure to install [Deno](https://deno.land/manual/getting_started/installation)
-
-Start project:
-```
-deno task dev
-```
+- [Changelog](https://github.com/sizoroot/confettis.sizo.dev/blob/main/CHANGELOG.md)
 
 ## Contributors
 All issue reports, feature requests, pull requests and github stars are welcomed and much appreciated.

@@ -1,4 +1,4 @@
-const getCursorPosition = (event: MouseEvent) => {
+const getCursorPosition = (event: React.MouseEvent<HTMLButtonElement>) => {
 
     const clientX = event.clientX
     const clientY = (event).clientY
